@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./diseño.css">
+</head>
+<body>
+    <div class="titulo">  
+        <h1>Pokedex LaunchX</h1>
+    </div>
+
+
+    <section class="pokedexIzquierda">
+        <div class="FondoLuzGrande">
+            <div class="ledGrandeAzul"></div>
+        </div>
+
+        <div class="contenedorLeds">
+            <div class="led rojoOscuro"></div>
+            <div class="led amarillo"></div>
+            <div class="led verde"></div>
+        </div>
+
+        <div class="contenedorPantalla">
+            <div class="pantallaImagenPoke">
+                <img src="./pokebola.png" alt="Pokemon" maxwidth="100px" id="pokeImg"><br>
+            </div>
+
+            <div class="parLedsArriba">
+                <div class="parLeds botonColorRojo"></div>
+                <div class="parLeds botonColorRojo"></div>
+            </div>
+
+            <div class="contenedorAbajoPantalla">
+                <div class="botonPantalla botonColorRojo "></div>
+                <div class="contenedorLineasPantalla">
+                    <div class="lineasPantalla"></div>
+                    <div class="lineasPantalla"></div>
+                    <div class="lineasPantalla"></div>
+                    <div class="lineasPantalla"></div>
+                </div>
+            </div>
+
+            <div class="contenedorBotones">
+                <button onclick="fetchPokemon()" class="boton botonColorNegro" name="buscar"></button>
+                <div class="botonLargo botonColorRojo"></div>
+                <div class="botonLargo botonColorAzul"></div>
+            </div>
+            <p class="buscar">Buscar</p>
+        </div>
+    
+        <div class="cortePantalla"></div>
+        <div class="linea"></div>
+
+        <div class="dpadVertical botonColorNegro"></div>
+        <div class="dpadHorizontal botonColorNegro"></div> 
+        <div class="pantallaVerde">
+            
+            <textarea name="texto" cols="15" rows="3"  id="pokeName" placeholder="Ingresa un pokemon...."></textarea>
+        </div>
+        
+    </section>
+
+    <section class="pokedexDerecha rojoOscuro">
+
+        <div class="pantallaInfo azul">
+            <div class="contenedorNombreId"> 
+                <p id="numero"></h3>
+                <p id="nombre"></h3>
+            </div>
+            <div class="tiposPokemon"></div>
+            <div class="habilidades"></div>
+            <div class="stats">
+                <p id="hp"></p>
+                <p id="attack"></p>
+                <p id="defense"></p>
+                <p id="espAttack"></p>
+                <p id="espDefense"></p>
+                <p id="velocity"></p>
+            </div>
+        </div>
+        
+
+        <div class="contenedorCuadrosAzules">
+            <div class="cuadro azul primero"></div>
+            <div class="cuadro azul"></div>
+            <div class="cuadro azul"></div>
+            <div class="cuadro azul"></div>
+            <div class="cuadro azul quinto"></div>
+            <div class="cuadro azul sexto"></div>
+            <div class="cuadro azul"></div>
+            <div class="cuadro azul"></div>
+            <div class="cuadro azul"></div>
+            <div class="cuadro azul decimo"></div>
+        </div>
+
+        <div class="contenedorBotonesLargos">
+            <div class="botonLargo botonColorNegro"></div>
+            <div class="botonLargo botonColorNegro"></div>
+        </div>
+        
+        <div class="contenedorCuadrosBlancos">
+            <div class="cuadro blanco blancoPrimero"></div>
+            <div class="cuadro blanco blancoSegundo"></div>
+        </div>
+
+        <div class="ledAmarilloDerecha amarillo"></div>
+        <div class="contenedorPantallasAbajo">
+            <div class="pantallaNegra botonColorNegro">
+                <p id="altura"></p>
+            </div>
+            <div class="pantallaNegra botonColorNegro">
+                <p id="peso"></p>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+</body>
+<footer>
+    <script src="./pokedex.js"></script>
+</footer>
+
+</html>

@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+}
+
+section{
+    width: 100%;
+}
+
+.botonColorNegro{
+    background-color: #062e28;
+}
+
+.botonColorRojo{
+    background-color: #c00000;
+}
+
+.botonColorAzul{
+    background-color: #14537e;
+}
+
+.rojoOscuro{
+    background-color: rgb(221, 16, 71);
+}
+
+.amarillo{
+    background-color: rgb(202, 202, 10);
+}
+
+.verde{
+    background-color: rgb(6, 144, 24);
+}
+
+.azul{
+    background-color: #27abfe;
+}
+
+.blanco{
+    background-color: #dedede;
+}
+
+/* Colores para los tipos de pokemon*/
+
+
+
+/* -----------------------------------------------Parte izquierda -----------------------------------*/
+
+.titulo{
+    position: absolute;
+    width: 500px;
+    height:100px;
+    margin-left: 40%;
+    font-family: 'Pokemon Solid', sans-serif;
+    font-size:x-large;
+}
+.pokedexIzquierda{
+    position: absolute;
+    width: 550px;
+    height: 800px;
+    top: 350px;
+    background-color: rgb(211, 10, 64);
+    left: 21.4%;
+    margin-top: -10%;
+    border-radius: 30px 10px 3px 25px;
+    box-shadow: -15px 3px rgb(144, 6, 42);
+    z-index: -2;
+}
+
+.FondoLuzGrande{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 100%;
+    z-index: 1;
+    left: 5%;
+    top: 3%;
+}
+
+.ledGrandeAzul{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: rgb(97, 156, 233);
+    border-radius: 100%;
+    z-index: 2;
+    left: 14%;
+    top: 9%;
+    box-shadow: -1px 1px rgb(123, 130, 231);
+}
+
+.contenedorLeds{ 
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    /*background-color: rgb(3, 0, 0);*/
+    z-index: 1; 
+    left: 30%;
+    top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: -1;
+    align-items: center;
+}
+
+.led{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    box-shadow: -1px 1px black;
+}
+
+.contenedorPantalla{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: #dedede;
+    top: 23%;
+    left: 14%;
+    border-radius: 15px 10px 15px;
+    border-left: 7px solid #838584;
+    border-bottom: 7px solid #838584;
+    
+}
+
+.cortePantalla{
+    position: absolute;
+    top: 410px;
+    left: 70px;
+    width: 300px;
+    height: 80px;
+    
+    border-top: 70px solid transparent;
+    border-left: 80px solid #d30a40;
+    z-index: 1;
+}
+
+.linea{ /*Linea que simula la sombra entre el corte y la pantalla*/
+    position: relative;
+    border-top: 1px solid #dedede;
+    height: 2px;
+    max-width: 98px;
+    padding: 0;
+    top: 424px;
+    margin: 20px auto 0 auto;
+    transform:rotate(43deg);
+    border-bottom: 7px solid #838584;
+    left: -160px;
+    z-index: 1;
+}
+
+.pantallaImagenPoke{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    top: 50px;
+    left: 50px;
+    border-radius: 6%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(159,228,242,1) 100%);
+}
+
+.parLedsArriba{
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    left: 150px;
+}
+
+.parLeds{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    box-shadow: -1px 1px black;
+}
+
+.contenedorAbajoPantalla{
+    position: absolute;
+    width: 250px;
+    height: 63px;
+    top: 230px;
+    left: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botonPantalla{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    box-shadow: -1px 1px black;
+}
+
+.buscar{
+    width: 50px;
+    height: 50px;
+    /*background-color: blue;*/
+    margin-top: 410px;
+    margin-left: -15px;
+}
+
+.contenedorLineasPantalla{
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 40px;
+}
+
+.lineasPantalla{
+    width: 70px;
+    height: 3px;
+    border-radius: 10px;
+    background: black;
+    margin: 3px;
+}
+
+.contenedorBotones{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 405px;
+    height: 95px;
+    top: 320px;
+    left: -10px;
+    align-items: center;
+}
+
+.boton{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    box-shadow: -2px 1px rgb(88, 84, 84);
+}
+
+.botonLargo{
+    width: 70px;
+    height: 15px;
+    border-radius: 15px;
+    margin: 25px;
+    letter-spacing: 100px;
+    box-shadow: -1px 1px rgb(88, 84, 84);
+}
+
+.dpadVertical{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    top: 560px;
+    left: 420px;
+    border-radius: 4px;
+}
+
+.dpadHorizontal{
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    top: 560px;
+    left: 420px;
+    box-shadow: -3px 1px rgb(88, 84, 84);
+    border-radius: 4px;
+    transform: rotate(90deg);
+    z-index: -1;
+}
+
+.pantallaVerde{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff;
+    top: 630px;
+    left: 120px;
+    border-radius: 10px;
+    font-size:14px;
+}
+
+.pantallaVerde textarea{
+    color: #14537e;
+    font-family: 'Press Start 2P';
+    border: 0px;
+    font-size: 14px;
+}
+
+.pantallaVerde ::placeholder{
+    color: #14537e;
+    font-family: 'Press Start 2P';
+    border: 0px;
+    font-size: 14px;
+}
+/*---------------------------------------Pokedex Parte Derecha -------------------------------*/
+.pokedexDerecha{
+    position: absolute;
+    width: 550px;
+    height: 700px;
+    top: 395px;
+    left: 50%;
+    margin-top: -10%;
+    border-radius: 0px 30px 3px 0px;
+    z-index: -2;
+    box-shadow: 15px -3px rgb(144, 6, 42);
+}
+
+.pantallaInfo{
+    position: absolute;
+    width: 430px;
+    height: 230px;
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(159,228,242,1) 100%);*/
+    top: 65px;
+    left: 65px;
+    border-radius: 10px;
+    box-shadow: -1px 1px rgb(88, 84, 84);
+}
+
+.contenedorCuadrosAzules{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 430px;
+    height: 120px;
+    background: rgb(2,0,36);
+    top: 310px;
+    left: 65px;
+    border-radius: 10px;
+    box-shadow: -1px 1px rgb(88, 84, 84);
+}
+
+.cuadro{
+    width: 86px;
+    height: 60px;
+    border: 1px rgb(173, 158, 158) solid;
+    box-shadow: -3px .5px rgb(88, 84, 84);
+}
+
+/*Redondeo de orillas de los bordes p cuadros azules*/
+.primero{
+    border-radius: 10px 0px 0px 0px;
+}
+
+.quinto{
+    border-radius: 0px 10px 0px 0px;
+}
+
+.sexto{
+    border-radius: 0px 0px 0px 10px;
+}
+
+.decimo{
+    border-radius: 0px 0px 10px 0px;
+}
+
+/*Los que estan debajo de los cuadros azules*/
+.contenedorBotonesLargos{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 260px;
+    height: 30px;
+    top: 450px;
+    left: 280px;
+    align-content: space-around;
+}
+
+.contenedorCuadrosBlancos{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 172px;
+    height: 70px;
+    /*background-color: #14537e;*/
+    top: 500px;
+    left: 65px;
+}
+
+.blancoPrimero{
+    border-radius: 10px 0px 0px 10px;
+}
+
+.blancoSegundo{
+    border-radius: 0px 10px 10px 0px;
+}
+
+.ledAmarilloDerecha{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: -1px 1px black;
+    top: 520px;
+    left: 450px;
+}
+
+.contenedorPantallasAbajo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 430px;
+    height: 60px;
+    top: 605px;
+    left: 65px;
+}
+
+.pantallaNegra{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.pantallaNegra p{ /*Altura y peso P */
+    text-align: left;
+    padding-top: 17px;
+    padding-left: 10px;
+    color: #d9c410;
+    font-size: 10px;
+}
+
+.contenedorNombreId{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    /*background-color: #ec1a1a;*/
+    font-size: 14px;
+}
+
+
+.tiposPokemon{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content:space-around;
+    justify-content: center;
+    margin-top: -45px;
+    margin-left: 215px;
+    width: 210px;
+    height: 40px;
+    /*background-color:#27abfe;*/
+    font-size: 14px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+
+
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    width: 420px;
+    height: 40px;
+    /*background-color: #222121;*/
+    font-size: 14px;
+    margin-top: 3px;
+    margin-left: 4px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    width: 420px;
+    height: 130px;
+    margin-top: 3px;
+    margin-left: 4px;
+    /*background-color: #d9c410;*/
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+
+
+
+
